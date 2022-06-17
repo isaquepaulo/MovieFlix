@@ -1,0 +1,22 @@
+.container-img {
+    margin-top: 40px;
+    height: 1px;
+}
+
+.text-main h1 {
+    margin-top: 80px;
+    color: #fff;
+    font-size: 48px;
+    letter-spacing: -1.5%;
+    margin-bottom: 20px;
+
+}
+
+.text-main p {
+
+    color: #fff;
+    font-size: 22px;
+    letter-spacing: -1.5%;
+    margin-bottom: 50px;
+
+}

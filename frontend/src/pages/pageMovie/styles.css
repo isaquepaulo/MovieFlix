@@ -1,0 +1,33 @@
+.pageMovie-container {
+    padding: 10px;
+}
+
+.pageMovie-container h1 {
+    color: #fff;
+    font-size: 24px;
+    letter-spacing: -1.5%;
+    margin-bottom: 50px;
+}
+
+.pageMovie-container li {
+    color: #fff;
+    font-size: 18px;
+    list-style-type: none;
+    letter-spacing: -1.5%;
+    margin-bottom: 12px;
+
+}
+
+@media (min-width: 1200px) {
+    .pageMovie-container h1 {
+        font-size: 48px;
+    }
+
+    .pageMovie-container li {
+
+        font-size: 24px;
+
+
+    }
+
+}

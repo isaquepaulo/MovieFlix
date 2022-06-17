@@ -1,0 +1,72 @@
+.login-card {
+    padding: 17px;
+    font-size: 16px;
+    margin: 20px;
+
+}
+
+
+.login-card h1 {
+    font-weight: normal;
+    font-size: 2.5em;
+    text-align: center;
+    letter-spacing: -0.015em;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.login-card form {
+    text-align: center;
+}
+
+.login-card form input {
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+}
+
+.div-button2 {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+@media (min-width: 576px) {
+    .login-card {
+        padding: 40px;
+    }
+
+    .div-button {
+        margin-top: 75px;
+        margin-bottom: 130px;
+    }
+}
+
+@media (min-width: 769px) {
+    .login-card {
+        padding: 40px;
+        width: 573px;
+    }
+
+    .div-button {
+        margin-top: 75px;
+        margin-bottom: 130px;
+    }
+}
+
+@media (min-width: 576px) {
+    .login-card {
+        padding: 50px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .div-button {
+        margin-top: 75px;
+        margin-bottom: 110px;
+    }
+
+}

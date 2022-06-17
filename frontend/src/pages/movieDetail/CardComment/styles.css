@@ -1,0 +1,30 @@
+.comentss-container {
+    padding: 10px;
+}
+
+.comentss-container img {
+    width: 13px;
+    height: 15px;
+    margin-right: 15px;
+    margin-top: 2px;
+    margin-left: 2px;
+}
+
+.comentss-container h2 {
+    font-size: 16px;
+    color: #fff;
+
+}
+
+.coment {
+    border: 1px solid #E1E1E1;
+    border-radius: 4px;
+}
+
+.coment p {
+    color: #9E9E9E;
+    font-size: 16px;
+    padding: 10px;
+
+
+}

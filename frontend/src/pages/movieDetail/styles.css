@@ -1,0 +1,16 @@
+.MovieDetail-container {
+    padding: 10px;
+}
+
+.MovieDetail-container h1 {
+    color: #fff;
+    font-size: 28px;
+    letter-spacing: -1.5%;
+    margin-bottom: 20px;
+
+
+}
+
+.coments-container {
+    margin-top: 20px;
+}
