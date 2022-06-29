@@ -2,7 +2,6 @@ import "./styles.css";
 import Estrela from "assets/imgs/Estrela.png";
 import { Review } from "types/review";
 
-
 type Props = {
   reviews: Review[];
 };
@@ -14,7 +13,7 @@ const CardComment = ({ reviews }: Props) => {
         <div key={review.id}>
           <div className="sub-container d-flex ">
             <div className="img-container d-flex justify-content-center">
-              <img src={Estrela} />
+              <img src={Estrela} alt="imagem" />
             </div>
             <h2>{review.user.name}</h2>
           </div>

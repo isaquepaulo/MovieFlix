@@ -10,13 +10,22 @@
 }
 
 .pageMovie-container li {
-    color: #fff;
     font-size: 18px;
     list-style-type: none;
     letter-spacing: -1.5%;
     margin-bottom: 12px;
-
 }
+.pagemovie-filter-containeer{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.pagination-div-container {
+    margin-top: 25px;
+
+} 
+
+
 
 @media (min-width: 1200px) {
     .pageMovie-container h1 {
@@ -27,6 +36,25 @@
 
         font-size: 24px;
 
+
+    }
+}
+
+@media (min-width: 576px) {
+    .pageMovie-container {
+        padding: 20px;
+    }
+
+
+}
+
+@media (min-width: 768px) {
+    .pageMovie-container {
+        padding: 40px;
+    }
+
+    .pagination-div-container {
+        margin-top: 40px;
 
     }
 

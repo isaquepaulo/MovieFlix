@@ -1,0 +1,33 @@
+.movie-filter-container {
+    height: 55px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+
+
+.movie-filter-genre-container {
+    background: #6C6C6C !important;
+}
+
+.movie-filter-select__control {
+    background: #6C6C6C !important;
+
+}
+
+.movie-filter-select__placeholder {
+    color: #FFFFFF !important;
+}
+
+.movie-filter-select__indicator-separator {
+    display: none;
+}
+
+@media (min-width: 576px) {
+    .movie-filter-genre-container {
+        width: 260px;
+    }
+
+}

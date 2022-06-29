@@ -3,3 +3,8 @@
   box-shadow: 8px 4px 20px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
 }
+
+a {
+  color: unset !important;
+  text-decoration: none !important
+}

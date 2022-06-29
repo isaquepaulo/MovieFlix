@@ -2,6 +2,7 @@ import { AxiosRequestConfig } from "axios";
 import { useForm } from "react-hook-form";
 import { Review } from "types/review";
 import { requestBackend } from "utils/request";
+import { toast } from "react-toastify";
 import "./styles.css";
 
 type Props = {
@@ -35,9 +36,9 @@ const CardInput = ({ movieId, onInsertReview }: Props) => {
 
     requestBackend(config)
       .then((response) => {
+        toast.success("Comentario salvo");
         setValue("text", "");
         onInsertReview(response.data);
-        console.log("Sucesso ao Salvar", response);
       })
       .catch((error) => {
         console.log("Erro ao Salvar", error);

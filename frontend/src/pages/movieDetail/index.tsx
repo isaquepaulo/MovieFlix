@@ -7,6 +7,7 @@ import { Review } from "types/review";
 import { useParams } from "react-router-dom";
 import CardComment from "./CardComment";
 import "./styles.css";
+import CardMovie from "./CardMovie";
 
 type UrlParams = {
   movieId: string;
@@ -14,10 +15,21 @@ type UrlParams = {
 
 const MovieDetail = () => {
   const { movieId } = useParams<UrlParams>();
-  console.log(movieId);
+
+  const [movie, setMovie] = useState([]);
+
+  useEffect(() => {
+    const config: AxiosRequestConfig = {
+      method: "GET",
+      url: `/movies/${movieId}`,
+      withCredentials: true,
+    };
+    requestBackend(config).then((response) => {
+      setMovie(response.data);
+    });
+  }, [movieId]);
 
   const [reviews, setReviews] = useState<Review[]>([]);
-
   useEffect(() => {
     const config: AxiosRequestConfig = {
       method: "GET",
@@ -34,10 +46,11 @@ const MovieDetail = () => {
     clone.push(review);
     setReviews(clone);
   };
-
   return (
     <div className="MovieDetail-container ">
-      <h1>Tela detalhes do filme id: {movieId}</h1>
+      <div className="mb-4 mt-4">
+        <CardMovie movie={movie} />
+      </div>
 
       {hasAnyRoles(["ROLE_MEMBER"]) && (
         <CardInput movieId={`${movieId}`} onInsertReview={handleInsertReview} />
